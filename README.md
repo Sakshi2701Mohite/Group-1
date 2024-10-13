@@ -1,8 +1,12 @@
-# Group-1
+# SLE777 Assessment-4
 
 This repository contains all the files related to SLE777 of the Group-1 for the Assessment-4.
+
+## Project Guide
+Dr. Ghazhanfar Khan
 
 ## Group Members
 1. Sakshi Mohite
 2. Babita Acharya
 3. Sachin Ghuman
+
