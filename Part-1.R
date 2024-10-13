@@ -32,3 +32,39 @@ hist(data$mean_expression,
      col = "blue", 
      border = "black", 
      breaks = 20)
+
+# Imported the csv file
+growth_data <- read.csv("https://raw.githubusercontent.com/ghazkha/Assessment4/refs/heads/main/growth_data.csv")
+
+# Checking the column names
+colnames(growth_data)
+
+# Checking the structure of the data
+str(growth_data)
+
+# Calculating Mean and SD for control site at the start
+mean_control_start <- mean(growth_data$Circumf_2005_cm, na.rm = TRUE)
+sd_control_start <- sd(growth_data$Circumf_2005_cm, na.rm = TRUE)
+
+# Displaying the output
+cat("Control Site - Start: Mean =", mean_control_start, "SD =", sd_control_start, "\n")
+
+# Calculating Mean and SD for control site at the end
+mean_control_end <- mean(growth_data$Circumf_2010_cm, na.rm = TRUE)
+sd_control_end <- sd(growth_data$Circumf_2010_cm, na.rm = TRUE)
+
+# Displaying the output
+cat("Control Site - End: Mean =", mean_control_end, "SD =", sd_control_end, "\n")
+
+# Mean and SD for treatment site at the start
+mean_treatment_start <- mean(growth_data$Circumf_2015_cm, na.rm = TRUE)
+sd_treatment_start <- sd(growth_data$Circumf_2015_cm, na.rm = TRUE)
+
+# Print the results
+cat("Treatment Site - Start: Mean =", mean_treatment_start, "SD =", sd_treatment_start, "\n")
+
+mean_treatment_end <- mean(growth_data$Circumf_2020_cm, na.rm = TRUE)
+sd_treatment_end <- sd(growth_data$Circumf_2020_cm, na.rm = TRUE)
+
+# Print the results
+cat("Treatment Site - End: Mean =", mean_treatment_end, "SD =", sd_treatment_end, "\n")
